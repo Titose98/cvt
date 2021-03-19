@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Covid Vaccine Tracker</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <style>
+            table tr:not(:first-child){
+                cursor: pointer;transition: all .25s ease-in-out;
+            }
+            table tr:not(:first-child):hover{background-color: #ddd;}
+        </style>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+     <h1>Registration for Covid Vaccine</h1>
+     <h2>Covid Vaccine Tracker</h2>
+     <form>
+        First Name:<input type="text" name="fname" id="fname"><br><br>
+        Last Name:<input type="text" name="lname" id="lname"><br><br>
+        Date of Vaccination:<input type="text" name="date_of_vaccination" id="date_of_vaccination"><br><br>
+        Vaccine Administered:<input type="text" name="vaccine_administered" id="vaccine_administered"><br><br>
+        Place of Vaccine:<input type="text" name="place_of_vaccine" id="place_of_vaccine"><br><br>
+        <input id ="Submit" type="submit" value = "Submit" >
+    </form>
+    
+    <p>If you click the "Submit" button, the form-data will be added to the table.</p>
+        <table id="table" border="1">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Date of Vaccinantion</th>
+                <th>VaccineAdministered</th>
+                <th>Place of Vaccine</th>
+            </tr>
+        </table>
+        <script src="scripts/main.js"></script>
+    </body>
+</html>
