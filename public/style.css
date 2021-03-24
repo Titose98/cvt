@@ -1,0 +1,24 @@
+
+li, h1 {
+  color: rgba(174, 180, 207, 0.103);
+}
+
+h1 {
+  font-size: 60px;
+  text-align: center;
+}
+ 
+table{
+	margin-top: 50px;
+	text-align: center;
+	background: #333;
+	color: #fff;
+}
+
+#show th, #show td{
+	padding: 13px;
+}
+
+#btna td input{
+	width: 100%;
+}
